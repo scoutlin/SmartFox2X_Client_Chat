@@ -41,9 +41,9 @@
             this.textBox_UserMsg = new System.Windows.Forms.TextBox();
             this.button_Send = new System.Windows.Forms.Button();
             this.button_Login = new System.Windows.Forms.Button();
-            this.richTextBox_Log = new System.Windows.Forms.RichTextBox();
             this.button_ServerStart = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.richTextBox_Log = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -151,14 +151,6 @@
             this.button_Login.UseVisualStyleBackColor = true;
             this.button_Login.Click += new System.EventHandler(this.button_Login_Click);
             // 
-            // richTextBox_Log
-            // 
-            this.richTextBox_Log.Location = new System.Drawing.Point(567, 121);
-            this.richTextBox_Log.Name = "richTextBox_Log";
-            this.richTextBox_Log.Size = new System.Drawing.Size(528, 324);
-            this.richTextBox_Log.TabIndex = 2;
-            this.richTextBox_Log.Text = "";
-            // 
             // button_ServerStart
             // 
             this.button_ServerStart.Location = new System.Drawing.Point(567, 19);
@@ -171,13 +163,22 @@
             // 
             // timer1
             // 
+            this.timer1.Interval = 20;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick_1);
+            // 
+            // richTextBox_Log
+            // 
+            this.richTextBox_Log.Location = new System.Drawing.Point(567, 121);
+            this.richTextBox_Log.Name = "richTextBox_Log";
+            this.richTextBox_Log.Size = new System.Drawing.Size(528, 324);
+            this.richTextBox_Log.TabIndex = 2;
+            this.richTextBox_Log.Text = "";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1113, 496);
+            this.ClientSize = new System.Drawing.Size(1405, 496);
             this.Controls.Add(this.button_ServerStart);
             this.Controls.Add(this.button_Login);
             this.Controls.Add(this.button_Send);
@@ -213,9 +214,9 @@
         private System.Windows.Forms.TextBox textBox_UserMsg;
         private System.Windows.Forms.Button button_Send;
         private System.Windows.Forms.Button button_Login;
-        private System.Windows.Forms.RichTextBox richTextBox_Log;
         private System.Windows.Forms.Button button_ServerStart;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.RichTextBox richTextBox_Log;
     }
 }
 

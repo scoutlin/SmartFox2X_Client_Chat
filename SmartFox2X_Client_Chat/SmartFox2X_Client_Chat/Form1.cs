@@ -454,16 +454,6 @@ namespace SmartFox2X_Client_Chat
                 }
 
                 receiveExtensionQueue.Enqueue(mISFSObject.GetText("data"));
-
-                // ----------------------------------------------------------------------------------------------
-                // 房間變數測試
-                // ----------------------------------------------------------------------------------------------
-                //RoomVariable rv = sfs.getLastJoinedRoom().getVariable("CandylandRoomSubject");
-                //if (rv != null && !rv.isNull())
-                //	logger.info("CandylandRoomSubject: " + rv.getValue().toString());
-                //// ----------------------------------------------------------------------------------------------
-
-                //this.gameDealing();
             }
         }
 
